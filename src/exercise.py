@@ -1,23 +1,26 @@
 def main():
     #write your code below this line
-    grade = int(input("Give points [0-100]:"))
+    score = int(input("Give points [0-100]:"))
+    grade = ""
 
-    if grade > 100:
-        print("incredible!")
-    elif grade >= 90:
-        print(5)
-    elif grade >= 80:
-        print(4)
-    elif grade >= 70:
-        print(3)
-    elif grade >= 60:
-        print(2)
-    elif grade >= 50:
-        print(1)
-    elif grade >= 0:
-        print("failed")
+    if score > 100:
+        grade = "incredible!"
+    elif score >= 90:
+        grade = str(5)
+    elif score >= 80:
+        grade = str(4)
+    elif score >= 70:
+        grade = str(3)
+    elif score >= 60:
+        grade = str(2)
+    elif score >= 50:
+        grade = str(1)
+    elif score >= 0:
+        grade = "failed"
     else:
-        print("impossible!")
+        grade = "impossible!"
+
+    print("Grade: " + grade)
 
 if __name__ == '__main__':
     main()
